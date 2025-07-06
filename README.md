@@ -1,15 +1,7 @@
 # Google Apps Script React Web Application
 
 A modern Google Apps Script web application built with React, TypeScript, and TailwindCSS. This project provides a complete development setup with hot reloading for local development and automated deployment to Google Apps Script.
-
-## 🚀 Features
-
-- **React + TypeScript**: Modern frontend development with full type safety
-- **TailwindCSS**: Utility-first CSS framework for rapid UI development
-- **Hot Reload Development**: Local development server with automatic rebuilding
-- **Automated Build Process**: Rollup-based build system optimized for Google Apps Script
-- **One-Command Deployment**: Deploy to Google Apps Script with a single command
-- **Google Apps Script Integration**: Seamless integration with Google Workspace
+###### Summer of making look at the bottom of this readme!
 
 ## 📋 Prerequisites
 
@@ -95,28 +87,6 @@ This will:
 - Create a new deployment
 - Open the web app in your browser
 
-### Manual Deployment Steps
-
-1. **Build the project**
-   ```bash
-   npm run build
-   ```
-
-2. **Push to Google Apps Script**
-   ```bash
-   npm run clasp:push
-   ```
-
-3. **Deploy the web app**
-   ```bash
-   npm run clasp:deploy
-   ```
-
-4. **Open the web app**
-   ```bash
-   npm run clasp:open
-   ```
-
 ## 📁 Project Structure
 
 ```
@@ -138,26 +108,6 @@ ClaspSetup/
 ├── tsconfig.json                  # TypeScript configuration
 └── package.json                   # Project dependencies and scripts
 ```
-
-## 🎨 Customization
-
-### Styling
-
-The project uses TailwindCSS for styling. You can:
-- Modify `tailwind.config.js` to customize the design system
-- Edit component styles in the React components
-- Add custom CSS in `src/Client/styles.css`
-
-### React Components
-
-- Main component: `src/Client/components/HelloWorld.tsx`
-- Add new components in the `src/Client/components/` directory
-- Update the main app in `src/Client/index.tsx`
-
-### Google Apps Script Functions
-
-- Server-side functions: `src/Server/server.js`
-- Apps Script configuration: `src/appsscript.json`
 
 ## 🔧 Available Scripts
 
@@ -225,14 +175,17 @@ The build process (`rollup.config.js`):
 
 This project is licensed under the MIT License.
 
-## 🤝 Contributing
+## ☀️ Summer of making
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+So for work I often need to setup a google app script project using html and js. I hated that. I found clasp and it is fine and easy but it didn't really have a good pre-built setup. Like you can't use external code languages and have a some what hot-reloading.
+I Created a simple system that makes it possible to run a dev server and:
+#### Easy deploy
+With only `npm run deploy`. It will build, push, deploy and open the site for you. Instead of needing to run 3 manual commands and than manually deploy and open via the app script site.
 
+#### AI
+Most of this code is made with AI but it has been customized so that it fits what I personally wanted it to look like.(Inspiration from the docusaurus build steps)
+
+Thank you for taking the time to read this (:
 ---
 
 Built with ❤️ using React, TailwindCSS, and Google Apps Script
