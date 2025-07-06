@@ -1,8 +1,7 @@
 # Google Apps Script React Web Application
 
 A modern Google Apps Script web application built with React, TypeScript, and TailwindCSS. This project provides a complete development setup with hot reloading for local development and automated deployment to Google Apps Script.
-
--# Summer of making look at the bottom of this readme!
+###### Summer of making look at the bottom of this readme!
 
 ## 📋 Prerequisites
 
