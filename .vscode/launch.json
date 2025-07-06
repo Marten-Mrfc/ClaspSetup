@@ -1,0 +1,35 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Build and Deploy to Apps Script",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/.bin/rollup",
+            "args": ["-c"],
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
+            "preLaunchTask": "Build and Deploy"
+        },
+        {
+            "name": "Run Build Script",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/.bin/npm",
+            "args": ["run", "build"],
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        },
+        {
+            "name": "Debug Node.js",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/main.js",
+            "console": "integratedTerminal",
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}

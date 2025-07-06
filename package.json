@@ -1,0 +1,46 @@
+{
+  "name": "example-risico-analyse",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "EXAMPLE - Google Apps Script web application",
+  "main": "build/Code.js",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "node simple-dev-server.js",
+    "deploy": "node deploy.js",
+    "preview": "npm run build && npm run dev",
+    "clasp:login": "clasp login",
+    "clasp:create": "clasp create --title 'EXAMPLE'",
+    "clasp:push": "clasp push -f",
+    "clasp:deploy": "clasp deploy",
+    "clasp:open": "clasp open --webapp"
+  },
+  "keywords": [
+    "google-apps-script",
+    "EXAMPLE",
+    "risico-analyse",
+    "webapp"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.5",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "autoprefixer": "^10.4.16",
+    "fs-extra": "^11.3.0",
+    "postcss": "^8.4.32",
+    "rollup": "^4.9.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3"
+  }
+}
